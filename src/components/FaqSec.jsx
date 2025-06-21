@@ -4,7 +4,7 @@ import { GoChevronDown } from "react-icons/go";
 
 function FaqSec() {
   return (
-      <div className='max-w-[1440px] max-h-[1016px] bg-[#FAFAFF] flex flex-col justify-center items-center'>
+      <div className='relative max-w-[1440px] max-h-[1016px] bg-[#FAFAFF] flex flex-col justify-center items-center'>
           
               <div className='absolute mx-auto px-[8px] py-[16px] top-[100px] lg:w-[528px] w-[350px] flex flex-col gap-[12px] justify-center items-start lg:items-center'>
 
