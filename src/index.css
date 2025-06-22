@@ -28,3 +28,6 @@
   font-weight: 100 900; /* Ranges from Thin to Black */
   font-style: normal;
 }
+.grid-style{
+  @apply flex flex-col lg:gap-[12px] border-r-[1px] lg:w-[394.6666564941406px]
+}
