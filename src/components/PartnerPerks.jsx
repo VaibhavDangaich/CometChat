@@ -22,10 +22,11 @@ const perks = [
 
 function PartnerPerks() {
   return (
-      <div className='bg-[#0A0914] w-screen'>
+      <div className='bg-[#0A0914] lg:min-w-[1440px]'>
           <div className='pt-[100px] pr-[64px] pb-[64px] pl-[64px] lg:w-[528px]'>
               <div className='flex flex-col lg:gap-[12px]'>
-                  <h1 className='lg:w-[125px] lg:text-[22px] leading-[106%] text-[#FF7F3E]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Be a partner</h1>
+                  <h1 className='hidden lg:block lg:w-[125px] lg:text-[22px] leading-[106%] text-[#FF7F3E]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Be a partner</h1>
+                  <h1 className='block lg:hidden text-[#FF7F3E]'>The benefits</h1>
                   <p className='text-[#FAFAFF] lg:text-[48px] leading-[106%] lg:w-[528px]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>CometChat partner advantages</p>
 
               </div>

@@ -8,7 +8,7 @@ function App() {
   
 
   return (
-    <div className='lg:w-[1440px] w-[390px]'>
+    <div className='w-full'>
       <PartnerPerks></PartnerPerks>
       <Programs></Programs>
       <FaqSec></FaqSec>
