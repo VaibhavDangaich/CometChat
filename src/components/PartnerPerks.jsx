@@ -8,6 +8,17 @@ import icon8 from '../assets/Icon(8).png'
 import icon9 from '../assets/Icon(9).png'
 import icon10 from '../assets/Icon(10).png'
 import icon11 from '../assets/Icon(11).png'
+const perks = [
+    { icon: icon3, title: "Free credits", desc: "Empowering partners to scale." },
+    { icon: icon4, title: "Revenue share", desc: "Get monthly recurring revenues when you refer clients." },
+    { icon: icon5, title: "Training and mentoring sessions", desc: "Enabling partners to deliver the best experience." },
+    { icon: icon6, title: "Special developer access", desc: "Get an all-access account to build unlimited PoCs for your clients." },
+    { icon: icon7, title: "Reduced time", desc: "Deliver your products much faster with our partners’ programs." },
+    { icon: icon8, title: "Value addition to your users", desc: "We need a 2 line text here " },
+    { icon: icon9, title: "Knowledge sessions", desc: "Access to product and market sessions." },
+    { icon: icon10, title: "On-demand support", desc: "Technical assistance for implementation." },
+    { icon: icon4, title: "Significant passive income",desc : "We need a 2 line text here ." },
+  ];
 
 function PartnerPerks() {
   return (
@@ -21,38 +32,20 @@ function PartnerPerks() {
              
               
           </div>
-          <div className='pt-[48px] pr-[64px] pb-[80px] pl-[64px] lg:w-[528px]'>
+          <div className='pt-[48px] pr-[64px] pb-[80px] pl-[64px] '>
               <div className='lg:grid lg:grid-cols-3 lg:gap-[64px]'>
-                  <div className='grid-style '>
-                      <img src={icon3} width={38} height={38}></img>
-                      <h1 className='lg:text-[18px] text-[#FAFAFF] leading-[112.00000000000001%]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 640 }}>Free credits</h1>
-                      <p className='lg:text-[18px] text-[#FAFAFF] opacity-[0.74] leading-[120%] tracking-[0.5%]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 500 }}>Empowering partners to scale.</p>
-                  </div>
-                  <div className='grid-style'>
-                      <img src={icon4} width={38} height={38}></img>
-                  </div>
-                  <div className='grid-style'>  
-                      <img src={icon5} width={38} height={38}></img>
-
-                  </div>
-                  <div className='grid-style'>
-                      <img src={icon6} width={38} height={38}></img>
-                  </div>
-                  <div className='grid-style'>
-                      <img src={icon7} width={38} height={38}></img>
-                  </div>
-                  <div className='grid-style'>
-                      <img src={icon8} width={38} height={38}></img>
-                  </div>
-                  <div className='grid-style'> 
-                      <img src={icon9} width={38} height={38}></img>
-                  </div>
-                  <div className='grid-style'>
-                      <img src={icon10} width={38} height={38}></img>
-                  </div>
-                  <div className='grid-style'>
-                      <img src={icon4} width={38} height={38}></img>
-                  </div>
+                  {
+                      perks.map((perk, index) => (
+                          <div className='flex flex-col justify-center lg:gap-[12px]'>
+                              <img src={perk.icon} height={38} width={38}></img>
+                              <h1 className='text-[#FAFAFF] lg:text-[18px] leading-[112.00000000000001%] ' style={{ fontFamily: 'SatoshiVariable', fontWeight: 640 }}>{perk.title}</h1>
+                              <p className='text-[#FAFAFF] opacity-[0.74] lg:text-[18px] tracking-[0.5%]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 500 }}>{perk.desc}</p>
+                          </div>
+                      ))
+                      
+                  }
+                 
+              
                   
                 
               </div>
