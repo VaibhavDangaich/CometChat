@@ -10,8 +10,8 @@ function Footer() {
 
               </div>
               
-              <div className='lg:px-[64px]'>
-                  <div className='flex flex-col lg:gap-[16px]'>
+              <div className='flex lg:gap-[40px] lg:px-[64px] justify-between'>
+                  <div className='flex flex-col lg:gap-[16px] '>
                       <h1 className='lg:text-[16px] leading-[112.00000000000001%] tracking-[0.5%] text-[#6852D6]'>Platform</h1>
                       <div className='flex flex-col lg:gap-[32px]'>
                           <div className='flex flex-col lg:gap-[16px]'>
@@ -54,11 +54,74 @@ function Footer() {
                       </div>
                       
                   </div>
-                  <div className='flex flex-col lg:gap-[16px]'>
+                  <div className='flex flex-col lg:gap-[16px] '>
+                      <h1 className='lg:text-[16px] leading-[112.00000000000001%] tracking-[0.5%] text-[#6852D6]'>Solutions</h1>
+                      <div className='flex flex-col lg:gap-[32px]'>
+                          <div className='flex flex-col lg:gap-[16px]'>
+                              <h1 className='opacity-[0.54] lg:text-[14px] text-[#FAFAFF] leading-[140%] tracking-[2%]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>By Use cases</h1>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Social Community</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Marketplace</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Healthcare</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Education</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Virtual Events </p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>On-Demand Service</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Dating Apps</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Gaming</p>
+
+                          </div>
+                          <div className='flex flex-col lg:gap-[16px]'>
+                              <h1 className='opacity-[0.54] lg:text-[14px] text-[#FAFAFF] leading-[140%] tracking-[2%]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>By Organization Type</h1>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Enterprise</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Startups</p>
+
+                              
+                          </div>
+                          
+                      </div>
+
                       
                   </div>
-                  <div></div>
-                  <div></div>
+                  <div className='flex flex-col lg:gap-[16px] '>
+                      <h1 className='lg:text-[16px] leading-[112.00000000000001%] tracking-[0.5%] text-[#6852D6]'>Developers</h1>
+                      <div className='flex flex-col lg:gap-[32px]'>
+                          <div className='flex flex-col lg:gap-[16px]'>
+                              <h1 className='opacity-[0.54] lg:text-[14px] text-[#FAFAFF] leading-[140%] tracking-[2%]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Technologies documentation</h1>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>React</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Angular</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Vue</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>IOS Swift</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Android Kotlin</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Android Java</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>React Native</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Ionic/Capacitor</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>WordPress</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Lavarel/PHP</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Flutter</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Next.js</p>
+
+
+                          </div>
+                          <div className='flex flex-col lg:gap-[16px]'>
+                              <h1 className='opacity-[0.54] lg:text-[14px] text-[#FAFAFF] leading-[140%] tracking-[2%]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Documentation</h1>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Documentation</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Product updates</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Tutorials</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Open-source Apps</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Product status</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Glossary</p>
+
+                          </div>
+                          
+                      </div>
+
+                  </div>
+                  <div className='flex flex-col lg:gap-[16px] '>
+                      <h1 className='lg:text-[16px] leading-[112.00000000000001%] tracking-[0.5%] text-[#6852D6]'>Resources</h1>
+                      <div className='flex flex-col lg:gap-[32px]'>  
+                          
+                      </div>
+
+                  </div>
 
         
               </div>
