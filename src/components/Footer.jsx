@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../assets/logo.png'
+import divider from '../assets/Divider.png'
 
 function Footer() {
   return (
@@ -118,15 +119,86 @@ function Footer() {
                   <div className='flex flex-col lg:gap-[16px] '>
                       <h1 className='lg:text-[16px] leading-[112.00000000000001%] tracking-[0.5%] text-[#6852D6]'>Resources</h1>
                       <div className='flex flex-col lg:gap-[32px]'>  
+                          <div className='flex flex-col lg:gap-[16px]'>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Customer stories</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Blog</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Give feedback</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Community forum</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Help center</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Partners</p>
+                              
+                          </div>
+                          <div className='flex flex-col lg:gap-[16px]'>
+                              <h1 className='lg:text-[16px] leading-[112.00000000000001%] tracking-[0.5%] text-[#6852D6]'>Competitors</h1>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>SendBird</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>GetStream</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Applozic</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Twilio</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>PubNub</p>
+
+                              
+                          </div>
+                          <div className='flex flex-col lg:gap-[16px]'>
+                              <h1 className='lg:text-[16px] leading-[112.00000000000001%] tracking-[0.5%] text-[#6852D6]'>Company</h1>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>About us</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Careers</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Partners</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Pricing</p>
+                              <p className='opacity-[0.84] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Chat with us</p>
+
+                          </div>
+                         
                           
+
+
                       </div>
 
                   </div>
 
         
               </div>
+              <div className="bg-[#0A0914] py-[40px] px-[64px] w-full">
+                  <div>
+                      <img src={divider} alt="divider" className="w-full mb-[24px]" />
+                  </div>
+
+                  <div className="flex flex-col lg:flex-row justify-between items-center w-full gap-[24px]">
+                      {/* Left side: 3 items */}
+                      <div className="flex flex-wrap items-center gap-[24px]">
+                          <p className="text-[#FAFAFF] opacity-[0.74] text-[14px] tracking-[2%]" style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>
+                              2023 © CometChat
+                          </p>
+                          <p className="text-[#FAFAFF] opacity-[0.74] text-[14px] tracking-[2%]" style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>
+                              Terms of Use
+                          </p>
+                          <p className="text-[#FAFAFF] opacity-[0.74] text-[14px] tracking-[2%]" style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>
+                              Privacy Policy
+                          </p>
+                      </div>
+
+                      {/* Right side: 5 social links */}
+                      <div className="flex flex-wrap items-center gap-[24px]">
+                          <p className="text-[#FAFAFF] opacity-[0.74] text-[14px] tracking-[2%]" style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>
+                              Facebook
+                          </p>
+                          <p className="text-[#FAFAFF] opacity-[0.74] text-[14px] tracking-[2%]" style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>
+                              LinkedIn
+                          </p>
+                          <p className="text-[#FAFAFF] opacity-[0.74] text-[14px] tracking-[2%]" style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>
+                              Instagram
+                          </p>
+                          <p className="text-[#FAFAFF] opacity-[0.74] text-[14px] tracking-[2%]" style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>
+                              Twitter
+                          </p>
+                          <p className="text-[#FAFAFF] opacity-[0.74] text-[14px] tracking-[2%]" style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>
+                              GitHub
+                          </p>
+                      </div>
+                  </div>
+              </div>
               
           </div>
+        
           
     </div>
   )
