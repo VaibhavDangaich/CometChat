@@ -6,6 +6,7 @@ import HomePage from './components/HomePage'
 import PartnerPerks from './components/PartnerPerks'
 import Programs from './components/Programs'
 import Footer from './components/Footer'
+import GetStarted from './components/GetStarted'
 
 function App() {
   
@@ -18,6 +19,7 @@ function App() {
       <Programs></Programs>
      
       <FaqSec></FaqSec>
+      <GetStarted></GetStarted>
       <Footer></Footer>
      
      

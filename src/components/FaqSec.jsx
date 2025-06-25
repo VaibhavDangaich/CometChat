@@ -3,7 +3,7 @@ import { GoChevronUp, GoChevronDown } from "react-icons/go";
 
 function FaqSec() {
     return (
-        <div className="bg-[#FAFAFF] w-full flex flex-col items-center py-[100px] px-[20px]">
+        <div className="bg-[#FAFAFF] w-full flex flex-col items-center py-[100px] px-[20px] z-30">
             {/* FAQ heading */}
             <div className='w-full max-w-[751px] flex flex-col gap-[12px] items-start lg:items-center'>
                 <h1 className='text-[#FF7129] text-[19px] lg:text-[22px] leading-[106%]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 640 }}>
