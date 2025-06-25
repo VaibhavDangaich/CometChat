@@ -1,10 +1,39 @@
 import React from 'react'
 import bgImage from '../assets/Group-1.png'
 import bgImage2 from '../assets/bgImage2.png'
+import grad from '../assets/Vector-grad.png'
+import orbit from '../assets/orbit.png'
+
 
 function GetStarted() {
   return (
     <div className='relative overflow-hidden bg-no-repeat mx-auto w-full lg:min-h-[480px] bg-[#0A0914] flex flex-col lg:gap-[32px] justify-center items-center'>
+
+      {/* CSS Starry Background */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <img src={grad} className=' mt-[-190px]'></img>
+        <img src={orbit} className='mt-[-450px]'></img>
+        {Array.from({ length: 150 }).map((_, i) => (
+          <div
+            key={i}
+            className="absolute rounded-full"
+            style={{
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+              width: `${Math.random() * 1.5 + 0.5}px`,
+              height: `${Math.random() * 1.5 + 0.5}px`,
+              backgroundColor: [
+                '#FFFFFF',
+                '#A584FF',
+                '#72BCFF',
+                '#FFBD6F',
+                '#AC7DFF',
+              ][Math.floor(Math.random() * 5)],
+              opacity: Math.random() * 0.7 + 0.3,
+            }}
+          />
+        ))}
+      </div>
 
       {/* First orb */}
       <img
@@ -29,7 +58,7 @@ function GetStarted() {
         }}
       />
 
-      <div className='flex flex-col justify-center items-center gap-[16px]'>
+      <div className='flex flex-col justify-center items-center gap-[16px] z-10'>
         <h1 className='lg:text-[48px] leading-[106%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>
           Get started for free
         </h1>
@@ -39,7 +68,7 @@ function GetStarted() {
         </p>
       </div>
 
-      <div className='flex gap-[12px] justify-center items-center'>
+      <div className='flex gap-[12px] justify-center items-center z-10'>
         <button className='border-[#FAFAFF1A] border-[1px] cursor-pointer pt-[12px] pr-[16px] pb-[12px] pl-[16px] lg:rounded-[12px] bg-[#FAFAFF05] lg:text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>
           Start free trial
         </button>
