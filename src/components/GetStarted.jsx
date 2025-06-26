@@ -9,14 +9,14 @@ function GetStarted() {
   return (
     <div className='relative overflow-hidden bg-no-repeat mx-auto w-full lg:min-h-[480px] bg-[#0A0914] flex flex-col lg:gap-[32px] justify-center items-center'>
 
-      {/* CSS Starry Background */}
+     
       <div className="absolute inset-0 z-0 pointer-events-none">
         <img src={grad} className=' mt-[-190px]'></img>
         <img src={orbit} className='mt-[-450px]'></img>
         {Array.from({ length: 150 }).map((_, i) => (
           <div
             key={i}
-            className="absolute rounded-full"
+            className="absolute rounded-full animate-pulse"
             style={{
               top: `${Math.random() * 100}%`,
               left: `${Math.random() * 100}%`,
