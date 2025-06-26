@@ -39,10 +39,9 @@ function GetStarted() {
       <img
         src={bgImage}
         alt="orb"
-        className="absolute z-0 pointer-events-none"
+        className="absolute lg:top-[-200px] top-[-410px] left-[-70px] lg:left-[-25px] z-0 pointer-events-none"
         style={{
-          top: '-200px',
-          left: '-25px',
+         
           transform: 'rotate(13.38deg)',
         }}
       />
@@ -51,11 +50,8 @@ function GetStarted() {
       <img
         src={bgImage2}
         alt="orb-2"
-        className="absolute z-0 pointer-events-none"
-        style={{
-          top: '100px',
-          left: '1100px',
-        }}
+        className="absolute lg:top-[100px] top-[10px] left-[130px] lg:left-[1100px] z-0 pointer-events-none"
+       
       />
 
       <div className='flex flex-col justify-center lg:items-center items-start gap-[16px] z-10'>
