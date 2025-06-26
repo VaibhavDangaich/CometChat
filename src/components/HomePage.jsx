@@ -2,7 +2,7 @@ import React from 'react';
 import comet from '../assets/Comets.png';
 import comet2 from '../assets/Comets2.png';
 import logo from '../assets/logo.png';
-import comet3 from '../assets/Comet3.png';
+import comet3 from '../assets/comet3.png';
 import highlight from '../assets/highlight.png';
 import { MdNightlight } from "react-icons/md";
 
