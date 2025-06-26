@@ -31,7 +31,7 @@
 .grid-style{
   @apply flex flex-col lg:gap-[12px] lg:w-[394.6666564941406px]
 }
-html, body {
+html, body{
   overflow-x: hidden;
 }
 @keyframes scroll {
