@@ -22,10 +22,10 @@ const perks = [
 
 function PartnerPerks() {
     return (
-        <div className='bg-[#0A0914] w-full flex flex-col items-center px-[20px] lg:px-[64px] py-[48px] lg:py-[100px]'>
+        <div  className='bg-[#0A0914] w-full flex flex-col items-center px-[20px] lg:px-[64px] py-[48px] lg:py-[100px]'>
 
-            {/* Header Section */}
-            <div className='w-full max-w-[1440px] flex flex-col gap-[8px] lg:gap-[12px]'>
+          
+            <div data-aos="fade-up" className='w-full max-w-[1440px] flex flex-col gap-[8px] lg:gap-[12px]'>
                 <h1 className='text-[#FF7F3E] text-[18px] lg:text-[22px] leading-[106%] font-semibold' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>
                     {`Be a partner`}
                 </h1>
@@ -34,10 +34,10 @@ function PartnerPerks() {
                 </p>
             </div>
 
-            {/* Perks Grid Section */}
-            <div className='w-full max-w-[1440px] mt-[48px] grid grid-cols-1 lg:grid-cols-3 gap-[48px] lg:gap-[64px]'>
+            
+            <div  className='w-full max-w-[1440px] mt-[48px] grid grid-cols-1 lg:grid-cols-3 gap-[48px] lg:gap-[64px]'>
                 {perks.map((perk, index) => (
-                    <div key={index} className='flex flex-col gap-[8px] lg:gap-[12px]'>
+                    <div data-aos="fade-left" key={index} className='flex flex-col gap-[8px] lg:gap-[12px]'>
                         <img src={perk.icon} alt={`icon-${index}`} width={38} height={38} />
                         <h1 className='text-[#FAFAFF] text-[18px] leading-[112%]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 640 }}>
                             {perk.title}

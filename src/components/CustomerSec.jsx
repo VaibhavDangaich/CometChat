@@ -13,8 +13,8 @@ const logos = [img9, img7, img4, img5, img1, img3, img2, img8, img6];
 
 function CustomerSec() {
   return (
-    <div className="w-full bg-[#0A0914] pt-[64px] pb-[80px] logo-wrapper">
-      <div className="logo-track">
+    <div  className="w-full bg-[#0A0914] pt-[64px] pb-[80px] logo-wrapper">
+      <div  data-aos="fade-up" className="logo-track">
         {[...logos, ...logos].map((logo, index) => (
           <img
             key={index}

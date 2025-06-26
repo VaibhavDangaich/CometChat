@@ -121,8 +121,8 @@ const resourcesSections = [
 
 const FooterSection = ({ heading, sections }) => (
     <div className='flex flex-col lg:gap-[16px] w-full'>
-        <div className='flex justify-between items-center lg:block'>
-            <h1
+        <div data-aos="slide-left" className='flex justify-between items-center lg:block'>
+            <h1 
                 className='lg:text-[16px] text-[#6852D6] text-[16px] leading-[112%] tracking-[0.5%]'
                 style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}
             >
@@ -130,7 +130,7 @@ const FooterSection = ({ heading, sections }) => (
             </h1>
             <GoPlus className='text-[#6852D6] lg:hidden block' />
         </div>
-        <div className='lg:flex flex-col lg:gap-[32px] hidden'>
+        <div data-aos="slide-right" className='lg:flex flex-col lg:gap-[32px] hidden'>
             {sections.map(({ title, items, isPrimary }, idx) => (
                 <div key={idx} className='flex flex-col lg:gap-[16px]'>
                     {title && (
@@ -162,19 +162,19 @@ const FooterSection = ({ heading, sections }) => (
 
 function Footer() {
     return (
-        <div className='bg-[#0A0914] lg:pt-[56px] pt-[24px] lg:pb-[40px] pb-[24px]'>
+        <div  className='bg-[#0A0914] lg:pt-[56px] pt-[24px] lg:pb-[40px] pb-[24px]'>
             <div className='flex flex-col justify-center lg:gap-[56px] gap-[24px]'>
                 <div className='min-w-[1440px]'>
-                    <img src={logo} className='lg:px-[64px] px-[20px] object-cover' />
+                    <img data-aos="fade-up" src={logo} className='lg:px-[64px] px-[20px] object-cover' />
                 </div>
 
-                <div className='flex lg:flex-row flex-col lg:gap-[40px] gap-[32px] lg:px-[64px] px-[20px] justify-between'>
-                    <FooterSection heading='Platform' sections={platformSections} />
+                <div  className='flex lg:flex-row flex-col lg:gap-[40px] gap-[32px] lg:px-[64px] px-[20px] justify-between'>
+                    <FooterSection  heading='Platform' sections={platformSections} />
                     <FooterSection heading='Solutions' sections={solutionsSections} />
                     <FooterSection heading='Developers' sections={developerSections} />
                     <FooterSection heading='Resources' sections={resourcesSections} />
 
-                    {/* SM screen Competitors + Icon */}
+                    
                     <div className='flex justify-between items-center lg:hidden'>
                         <h1 className='text-[#6852D6] text-[16px] leading-[112%] tracking-[0.5%]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>
                             Competitors
@@ -182,8 +182,8 @@ function Footer() {
                         <GoPlus className='text-[#6852D6]' />
                     </div>
 
-                    {/* SM screen Company + Icon */}
-                    <div className='flex justify-between items-center lg:hidden'>
+                  
+                    <div  className='flex justify-between items-center lg:hidden'>
                         <h1 className='text-[#6852D6] text-[16px] leading-[112%] tracking-[0.5%]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>
                             Company
                         </h1>
@@ -192,11 +192,11 @@ function Footer() {
                 </div>
 
                 <div className='bg-[#0A0914] py-[40px] lg:px-[64px] px-[20px] w-full'>
-                    <div>
+                    <div  >
                         <img src={divider} alt='divider' className='w-full mb-[24px]' />
                     </div>
 
-                    <div className='flex flex-col lg:flex-row justify-between items-center w-full gap-[24px]'>
+                    <div  className='flex flex-col lg:flex-row justify-between items-center w-full gap-[24px]'>
                         <div className='lg:flex hidden flex-wrap items-center gap-[24px]'>
                             {['2023 © CometChat', 'Terms of Use', 'Privacy Policy'].map((item) => (
                                 <p
@@ -209,8 +209,8 @@ function Footer() {
                             ))}
                         </div>
 
-                        {/* ✅ Updated with icons */}
-                        <div className='flex flex-wrap items-center lg:gap-[24px] gap-[12px]'>
+                       
+                        <div  className='flex flex-wrap items-center lg:gap-[24px] gap-[12px]'>
                             <div className='flex items-center gap-[8px]'>
                                 <img src={facebook} className='w-[16px] h-[16px]' alt='Facebook' />
                                 <p className='text-[#FAFAFF] opacity-[0.74] text-[14px] tracking-[2%]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>Facebook</p>
@@ -234,8 +234,8 @@ function Footer() {
                         
                         </div>
 
-                        {/* Extra terms only visible in mobile */}
-                        <div className='lg:hidden flex flex-wrap items-center lg:gap-[24px] gap-[16px]'>
+                    
+                        <div  className='lg:hidden flex flex-wrap items-center lg:gap-[24px] gap-[16px]'>
                             {['2023 © CometChat', 'Terms of Use', 'Privacy Policy'].map((item) => (
                                 <p
                                     key={item}

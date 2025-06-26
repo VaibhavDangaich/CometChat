@@ -26,10 +26,10 @@ function Programs() {
     ];
 
     return (
-        <div className='w-full bg-white flex flex-col items-center px-[20px] lg:px-[64px] py-[64px] lg:py-[100px]'>
+        <div  className='w-full bg-white flex flex-col items-center px-[20px] lg:px-[64px] py-[64px] lg:py-[100px]'>
 
-            {/* Header */}
-            <div className="w-full max-w-[1440px] flex flex-col gap-[10px] pb-[64px]">
+        
+            <div data-aos="fade-up"  className="w-full max-w-[1440px] flex flex-col gap-[10px] pb-[64px]">
                 <p
                     className="text-[#6852D6] text-[18px] lg:text-[22px] leading-[106%]"
                     style={{ fontFamily: 'SatoshiVariable', fontWeight: 640 }}
@@ -44,8 +44,8 @@ function Programs() {
                 </h2>
             </div>
 
-            {/* Program Cards */}
-            <div className='w-full max-w-[1440px] pt-[48px] pb-[80px] grid grid-cols-1 lg:grid-cols-3 gap-[48px] lg:gap-[64px]'>
+          
+            <div data-aos="fade-up" className='w-full max-w-[1440px] pt-[48px] pb-[80px] grid grid-cols-1 lg:grid-cols-3 gap-[48px] lg:gap-[64px]'>
                 {programs.map((program, index) => (
                     <div key={index} className='flex flex-col gap-[8px] lg:gap-[10px]'>
                         <img

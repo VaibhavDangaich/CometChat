@@ -7,10 +7,10 @@ import orbit from '../assets/orbit.png'
 
 function GetStarted() {
   return (
-    <div className='relative overflow-hidden bg-no-repeat w-full min-h-[358px] lg:min-h-[480px] bg-[#0A0914] flex flex-col lg:gap-[32px] gap-[24px] justify-center lg:items-center items-start pl-[20px]'>
+    <div  className='relative overflow-hidden bg-no-repeat w-full min-h-[358px] lg:min-h-[480px] bg-[#0A0914] flex flex-col lg:gap-[32px] gap-[24px] justify-center lg:items-center items-start pl-[20px]'>
 
      
-      <div className="absolute inset-0 z-0 pointer-events-none">
+      <div data-aos="fade-up" className="absolute inset-0 z-0 pointer-events-none">
         <img src={grad} className=' mt-[-190px]'></img>
         <img src={orbit} className='mt-[-450px]'></img>
         {Array.from({ length: 150 }).map((_, i) => (
@@ -35,8 +35,8 @@ function GetStarted() {
         ))}
       </div>
 
-      {/* First orb */}
-      <img
+   
+      <img data-aos="fade-up"
         src={bgImage}
         alt="orb"
         className="absolute lg:top-[-200px] top-[-410px] left-[-70px] lg:left-[-25px] z-0 pointer-events-none"
@@ -46,15 +46,15 @@ function GetStarted() {
         }}
       />
 
-      {/* Second orb positioned at (1262px, 296px) */}
-      <img
+      
+      <img data-aos="fade-up"
         src={bgImage2}
         alt="orb-2"
         className="absolute lg:top-[100px] top-[10px] left-[130px] lg:left-[1100px] z-0 pointer-events-none"
        
       />
 
-      <div className='flex flex-col justify-center lg:items-center items-start gap-[16px] z-10'>
+      <div data-aos="fade-up" className='flex flex-col justify-center lg:items-center items-start gap-[16px] z-10'>
         <h1 className='lg:text-[48px] text-[32px] leading-[106%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>
           Get started<br className='lg:hidden block'></br> for free
         </h1>
@@ -64,11 +64,11 @@ function GetStarted() {
         </p>
       </div>
 
-      <div className='flex gap-[12px] justify-center items-center z-10'>
-        <button className='border-[#FAFAFF1A] border-[1px] cursor-pointer pt-[12px] pr-[16px] pb-[12px] pl-[16px] rounded-[12px] bg-[#FAFAFF05] text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>
+      <div data-aos="fade-up" className='flex gap-[12px] justify-center items-center z-10'>
+        <button className='transition-transform duration-300 ease-in-out hover:scale-115 border-[#FAFAFF1A] border-[1px] cursor-pointer pt-[12px] pr-[16px] pb-[12px] pl-[16px] rounded-[12px] bg-[#FAFAFF05] text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>
           Start free trial
         </button>
-        <button className='border-[#FAFAFF1A] border-[1px] cursor-pointer pt-[12px] pr-[16px] pb-[12px] pl-[16px] rounded-[12px] bg-[#6852D6] text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>
+        <button className='transition-transform duration-300 ease-in-out hover:scale-115 border-[#FAFAFF1A] border-[1px] cursor-pointer pt-[12px] pr-[16px] pb-[12px] pl-[16px] rounded-[12px] bg-[#6852D6] text-[14px] leading-[140%] tracking-[2%] text-[#FAFAFF]' style={{ fontFamily: 'SatoshiVariable', fontWeight: 600 }}>
           Schedule a demo
         </button>
       </div>
